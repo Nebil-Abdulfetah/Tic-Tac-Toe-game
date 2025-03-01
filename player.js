@@ -3,7 +3,10 @@ const editPlayer1 = document.querySelector(".edit-player-1");
 const editPlayer2 = document.querySelector(".edit-player-2");
 const nameInput = document.querySelector("#name");
 const confirmBtn = document.querySelector(".confirm-btn");
+
+
 let editTurn;
+
 // Adding event to listen when the user wants to edit name
 
 //checking which player is getting edited
@@ -35,3 +38,5 @@ cancelBtn.addEventListener("click", showOverlayForm);
 function showOverlayForm() {
   document.body.classList.toggle("show-overlay");
 }
+
+

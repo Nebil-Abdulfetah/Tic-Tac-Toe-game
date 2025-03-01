@@ -24,7 +24,8 @@ header p {
   margin-top: 1rem;
 }
 main {
-  margin-top: 3rem;
+  margin-block: 3rem;
+  text-align: center;
 }
 .players-container {
   display: flex;
@@ -34,6 +35,7 @@ main {
   gap: 1.5rem;
   padding: 1rem;
   width: 90%;
+  margin-inline: auto;
 }
 .player {
   background-color: rgb(250, 249, 247);
@@ -114,4 +116,32 @@ body.show-overlay .overlay-form {
   background-color: transparent;
   color: var(--primary-color);
   border-color: var(--primary-color);
+}
+.turn-teller {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+}
+.game-box-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 350px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: center;
+  display: none;
+}
+.box-item {
+  aspect-ratio: 1;
+  background-color: rgb(185, 178, 233);
+  border-radius: 8px;
+  transition:  .2s ease;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.box-item:hover, .selected-box {
+  background-color: var(--primary-color);
 }

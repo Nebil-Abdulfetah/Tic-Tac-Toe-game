@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="container">
-        <h1>Play Tic, Tac, Toe</h1>
+        <h1>Tic, Tac, Toe</h1>
         <p>Built with HTML, CSS and JavaScript</p>
       </div>
     </header>
@@ -19,16 +19,29 @@
         <div class="players-container">
           <div class="player player-1">
             <p class="player-num">Player 1</p>
-            <p class="player-name player1-name">Player Name</p>
+            <p class="player-name player1-name">Player 1</p>
             <p class="player-symbol">X</p>
             <button class="btn edit-btn edit-player-1">Edit</button>
           </div>
           <div class="player player-2">
             <p class="player-num">Player 2</p>
-            <p class="player-name player2-name">Player Name</p>
+            <p class="player-name player2-name">Player 2</p>
             <p class="player-symbol">O</p>
             <button class="btn edit-btn edit-player-2">Edit</button>
           </div>
+        </div>
+        <button class="btn start-game">Start New Game</button>
+        <p class="turn-teller"></p>
+        <div class="game-box-container">
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
         </div>
       </div>
 
@@ -36,7 +49,7 @@
       <section class="overlay-form">
         <div class="overlay-container">
           <h2 class="form-title">Choose your name</h2>
-          <input type="text" id="name" placeholder="Player name">
+          <input type="text" id="name" placeholder="Player name" />
           <div class="buttons-container">
             <button class="btn cancel-btn">Cancel</button>
             <button class="btn confirm-btn">Confirm</button>
@@ -45,6 +58,7 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>
