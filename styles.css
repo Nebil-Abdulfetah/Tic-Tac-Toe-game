@@ -145,3 +145,7 @@ body.show-overlay .overlay-form {
 .box-item:hover, .selected-box {
   background-color: var(--primary-color);
 }
+.winner {
+  margin-block: 1rem;
+  color: var(--primary-color);
+}
