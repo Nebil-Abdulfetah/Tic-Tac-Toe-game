@@ -21,14 +21,17 @@ editPlayer2.addEventListener("click", () => {
 
 //changing name for the specific player that was chosen
 confirmBtn.addEventListener("click", () => {
-  if (editTurn === "player1") {
-    document.querySelector(".player1-name").innerHTML = nameInput.value;
-    nameInput.value = "";
-    showOverlayForm();
-  } else {
-    document.querySelector(".player2-name").innerHTML = nameInput.value;
-    nameInput.value = "";
-    showOverlayForm();
+  if(nameInput.value.trim() !== "") {
+
+    if (editTurn === "player1") {
+      document.querySelector(".player1-name").innerHTML = nameInput.value;
+      nameInput.value = "";
+      showOverlayForm();
+    } else {
+      document.querySelector(".player2-name").innerHTML = nameInput.value;
+      nameInput.value = "";
+      showOverlayForm();
+    }
   }
 });
 
